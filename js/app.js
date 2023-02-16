@@ -8,9 +8,9 @@ document.getElementById("check-btn").addEventListener("click", function () {
   let getText = document.getElementById("input-value");
   let stringGetText = getText.value;
   if (stringGetText == generatedNumber) {
-    alert("Yes");
+    document.getElementById("show-result").innerText = "Pin is Correct";
   } else {
-    alert("Wrong pin");
+    document.getElementById("show-result").innerText = "Pin is Wrong";
   }
   getText.value = "";
 });
